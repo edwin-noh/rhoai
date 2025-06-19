@@ -3,4 +3,4 @@ kind: Kustomization
 
 resources:
   - ../../base
-  - ../../../components/argocd/apps/overlays/stable-2.20
+  - ../../../clusters/overlays/sno-hub

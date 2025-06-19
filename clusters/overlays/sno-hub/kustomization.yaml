@@ -3,4 +3,4 @@ kind: Kustomization
 
 resources:
   - ../../base
-  - ../../../clusters/overlays/stable-2.20
+  - ../../../components/argocd/apps/overlays/rhoai-2.20
