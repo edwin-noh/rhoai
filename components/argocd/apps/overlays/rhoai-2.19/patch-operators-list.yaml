@@ -11,22 +11,17 @@ spec:
         values:
           name: openshift-ai-operator
           path: components/operators/openshift-ai/aggregate/overlays/stable-2.19-serving-only
+      - cluster: local
+        url: https://kubernetes.default.svc
+        values:
+          name: openshift-serverless-operator
+          path: components/operators/openshift-serverless/operator/overlays/stable
+      - cluster: local
+        url: https://kubernetes.default.svc
+        values:
+          name: openshift-servicemesh-operator
+          path: components/operators/openshift-servicemesh/operator/overlays/stable
   template:
     spec:
       source:
         targetRevision: main
-      # - cluster: local
-      #   url: https://kubernetes.default.svc
-      #   values:
-      #     name: openshift-gitops-operator
-      #     path: components/operators/openshift-gitops/aggregate/overlays/rhdp
-      # - cluster: local
-      #   url: https://kubernetes.default.svc
-      #   values:
-      #     name: openshift-serverless-operator
-      #     path: components/operators/openshift-serverless/operator/overlays/stable
-      # - cluster: local
-      #   url: https://kubernetes.default.svc
-      #   values:
-      #     name: openshift-servicemesh-operator
-      #     path: components/operators/openshift-servicemesh/operator/overlays/stable
